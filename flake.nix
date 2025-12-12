@@ -11,5 +11,6 @@
     {
       nixosModules.rosePine = import ./nix/nixos-module.nix;
       homeManagerModule.rosePine = import ./nix/home-manager-module.nix;
+      colors = (import ./nix/rose-pine-colors.nix).rosePine;
     };
 }
